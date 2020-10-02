@@ -12,8 +12,8 @@ CLI application should accept 4 options (short alias and full name):
 
 ## Usage example:
 
-$ node my_caesar_cli -a encode -s 7 -i "./input.txt" -o "./output.txt"
+```$ node my_caesar_cli -a encode -s 7 -i "./input.txt" -o "./output.txt"```
 
-$ node my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt
+```$ node my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt```
 
-$ node my_caesar_cli --action decode --shift 7 --input decoded.txt --output plain.txt
+```$ node my_caesar_cli --action decode --shift 7 --input decoded.txt --output plain.txt```

@@ -9,10 +9,15 @@ const params = {
     action: args.action || args.a
 }
 
-const validationResult = require('./validateArgs')(params);
+const validationResults = require('./validateArgs')(params);
 
-if (!validationResult) {
+if (!validationResults.action) {
     console.error('Parameter "action" should be "encode" or "decode"')
+    process.exit(9);
+}
+
+if (!validationResults.shift) {
+    console.error('Parameter "shift" is required and should be an integer')
     process.exit(9);
 }
 

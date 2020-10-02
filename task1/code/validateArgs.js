@@ -1,4 +1,7 @@
     module.exports = (params) => {
-        var result = params.action === 'encode' || params.action === 'decode';
+        const result = {
+            action: params.action === 'encode' || params.action === 'decode',
+            shift: Number.isInteger(params.shift)
+        }
         return result;
     };
