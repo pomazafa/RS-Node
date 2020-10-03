@@ -1,6 +1,6 @@
 # Parameters
 
-CLI application should accept 4 options (short alias and full name):
+CLI application accepts 4 options (short alias and full name):
 
 -s, --shift: a shift
 
